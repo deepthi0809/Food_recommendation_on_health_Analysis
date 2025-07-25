@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Journey</title>
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+  <!-- Welcome Section -->
+  <section id="welcome-form">
+    <h2 id="welcome-message">Welcome to your Healthy Journey!</h2>
+    <p>Let’s explore ways to maintain a healthier lifestyle, just for you.</p>
+    <button onclick="openChatbot()">Start Your Personalized Assessment</button>
+    <div id="greeting-message" style="margin-top: 20px; font-weight: bold;"></div>
+  </section>
+
+  <!-- Chatbot UI -->
+  <div id="chatbot" style="display: none;">
+    <div id="chatbot-header">Health Assistant</div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type your response..." />
+      <button id="chatbot-send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function openChatbot() {
+      document.getElementById("chatbot").style.display = "flex";
+    }
+  </script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
